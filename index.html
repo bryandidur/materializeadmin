@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | Materialize Admin</title>
+    <link rel="shortcut icon" href="#">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/materializeadmin.css" media="screen,projection">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <!-- Body title -->
+            <h1 class="hide">Dashboard | Anglize Admin</h1>
+
+            <!-- Own Sidenav -->
+            <ul class="own-sidenav">
+                <!-- Logo -->
+                <li class="own-sidenav-logo">
+                    <p class="hidden-own-sidenav-mini">ANGLIZE ADMIN</p>
+                    <p class="shown-own-sidenav-mini soft-hide">AA</p>
+                </li><!-- / .own-sidenav-logo -->
+
+                <!-- User -->
+                <li class="own-sidenav-user valign-wrapper">
+                    <a href="javascript:void(0)">
+                        <img class="circle responsive-img" src="./assets/img/user.jpg" alt="User Image">
+                    </a>
+                    <div class="hidden-own-sidenav-mini">
+                        <a class="truncate" href="javascript:void(0)">Julia Rocks</a>
+                        <p class="truncate">Administrator</p>
+                    </div>
+                </li><!-- / .own-sidenav-user -->
+
+                <!-- Links -->
+                <li class="own-sidenav-links">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li class="active">
+                            <a href="javascript:void(0)" class="collapsible-header waves-effect waves-light">
+                                <i class="material-icons">dashboard</i>
+                                <span class="hidden-own-sidenav-mini">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="collapsible-header waves-effect waves-light">
+                                <i class="material-icons">content_paste</i>
+                                <span class="hidden-own-sidenav-mini">Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="collapsible-header waves-effect waves-light">
+                                <i class="material-icons">apps</i>
+                                <span class="hidden-own-sidenav-mini">Components</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="collapsible-header waves-effect waves-light">
+                                <i class="material-icons">image</i>
+                                <span class="hidden-own-sidenav-mini">Pages</span>
+                                <i class="hidden-own-sidenav-mini material-icons right">expand_more</i>
+                            </a>
+
+                            <ul class="collapsible-body">
+                                <li>
+                                    <a href="javascript:void(0)" class="waves-effect waves-light">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="waves-effect waves-light">Test 2</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="waves-effect waves-light">Test 3</a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </li><!-- / .own-sidenav-links -->
+            </ul><!-- / .own-sidenav -->
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <section>
+                <!-- Main Nav -->
+                <nav class="main-nav">
+                    <div class="nav-wrapper row">
+                        <ul class="col s10 m6 left">
+                            <li>
+                                <a id="btn-toggle-own-sidenav" class="btn-floating white waves-effect waves-dark">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                            </li>
+                            <li class="gray-text text-darken-3">Dashboard</li>
+                        </ul><!-- / .col -->
+
+                        <ul class="col s2 m6 right">
+                            <!-- Account -->
+                            <li>
+                                <a class="dropdown-button waves-effect waves-dark" href="javascript:void(0)"
+                                    data-activates="dropdown-account"
+                                    data-beloworigin="true"
+                                >
+                                    <i class="material-icons">person</i>
+                                </a>
+                                <ul id="dropdown-account" class="dropdown-account dropdown-content">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="material-icons">person</i>
+                                            <span>Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="material-icons">settings</i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="material-icons">power_settings_new</i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </li>
+
+                            <!-- Notifications -->
+                            <li class="hide-on-small-only">
+                                <a class="dropdown-button waves-effect waves-dark" href="javascript:void(0)"
+                                    data-activates="dropdown-notifications"
+                                    data-beloworigin="true"
+                                >
+                                    <i class="material-icons">notifications</i>
+                                    <span class="info-circle yellow accent-4">3</span>
+                                </a>
+                                <ul id="dropdown-notifications" class="dropdown-notifications dropdown-content">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img class="circle" src="./assets/img/user.jpg" alt="User Image" width="40" height="40">
+                                            <div>
+                                                <p class="truncate"><b>Suzan</b> posted a new article</p>
+                                                <time datetime="2017-01-01 00:00:00">1 min ago</time>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img class="circle" src="./assets/img/user.jpg" alt="User Image" width="40" height="40">
+                                            <div>
+                                                <p class="truncate"><b>Michelle</b> change his profile</p>
+                                                <time datetime="2017-01-01 00:00:00">4 min ago</time>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img class="circle" src="./assets/img/user.jpg" alt="User Image" width="40" height="40">
+                                            <div>
+                                                <p class="truncate"><b>John</b> add a new category</p>
+                                                <time datetime="2017-01-01 00:00:00">15 min ago</time>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <a href="javascript:void(0)">See all notifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Database -->
+                            <li class="hide-on-small-only">
+                                <a class="dropdown-button waves-effect waves-dark" href="javascript:void(0)"
+                                    data-activates="dropdown-database"
+                                    data-beloworigin="true"
+                                >
+                                    <i class="material-icons">dns</i>
+                                    <span class="info-circle blue accent-2">!</span>
+                                </a>
+                                <ul id="dropdown-database" class="dropdown-database dropdown-content">
+                                    <li>
+                                        <span>Bandwidth
+                                            <div class="progress">
+                                                <div class="determinate blue lighten-1" style="width: 40%"></div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>CPU
+                                            <div class="progress">
+                                                <div class="determinate blue darken-1" style="width: 60%"></div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Disc
+                                            <div class="progress">
+                                                <div class="determinate orange lighten-1" style="width: 30%"></div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <a href="javascript:void(0)">See all informations</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Mail -->
+                            <li class="hide-on-small-only">
+                                <a class="waves-effect waves-dark" href="javascript:void(0)">
+                                    <i class="material-icons">email</i>
+                                    <span class="info-circle amber accent-2">5</span>
+                                </a>
+                            </li>
+                        </ul><!-- / .col -->
+                    </div><!-- / .row -->
+                </nav>
+                <div class="divider"></div>
+
+                <!-- Content -->
+                <div class="main-content section">
+                    <p>Dashboard content | Coming soon</p>
+                </div><!-- / .main-content -->
+
+            </section>
+            <div class="clearfix"></div>
+        </main><!-- / .main -->
+    </div><!-- / .wrapper -->
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/materialize.js"></script>
+    <script src="./assets/js/materializeadmin.js"></script>
+</body>
+</html>

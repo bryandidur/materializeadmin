@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden;
+    @extend .grey, .lighten-3;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.no-margin { margin: 0 !important; }
+.soft-hide { display: none; }

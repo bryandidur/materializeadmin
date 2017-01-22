@@ -1,0 +1,151 @@
+.own-sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $own-sidenav-width;
+    height: 100%;
+    margin: 0;
+    padding: 10px !important;
+    background-color: $own-sidenav-bg-color;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+// Logo
+.own-sidenav-logo {
+    color: $own-sidenav-color;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.7px;
+
+    p {
+        margin: 0;
+        padding: 10px 0 20px 0;
+        font-size: 17px;
+    }
+}
+
+// User
+.own-sidenav-user {
+    margin-bottom: 10px;
+    padding: 25px 0;
+    border-top: 1px solid transparentize( $own-sidenav-color, 0.85 );
+    border-bottom: 1px solid transparentize( $own-sidenav-color, 0.85 );
+
+    > a {
+        display: block;
+        width: 60px;
+        height: auto;
+        max-width: 100%;
+        float: left;
+        font-size: 14px;
+    }
+    > div {
+        float: left;
+        width: 150px;
+        margin-left: 20px;
+
+        a {
+            color: $own-sidenav-color;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            color: $own-sidenav-color;
+            font-size: 12px;
+        }
+    }
+}
+
+// Links
+.own-sidenav-links {
+
+    .collapsible,
+    .collapsible-header,
+    .collapsible-body {
+        border: none;
+        box-shadow: none;
+    }
+
+    li.active > a {
+        background-color: transparentize( $own-sidenav-color, 0.9 );
+    }
+
+    li > a,
+    .collapsible-header {
+        display: block;
+        width: 100%;
+        min-height: initial;
+        padding: 10px;
+        font-size: 14px;
+        color: $own-sidenav-color;
+        background-color: transparent;
+        border-radius: 4px;
+        will-change: auto;
+
+        &:hover {
+            background-color: transparentize( $own-sidenav-color, 0.9 );
+        }
+
+        span,
+        .material-icons {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            float: left;
+        }
+
+        span {
+            margin-left: 15px;
+        }
+
+        .material-icons {
+            width: 30px;
+            margin: 0;
+            text-align: center;
+            color: transparentize( $own-sidenav-color, 0.2 );
+        }
+    }
+
+    .collapsible-body {
+        padding-bottom: 10px;
+
+        a {
+            padding-left: 55px;
+            color: transparentize( $own-sidenav-color, 0.2 );
+        }
+    }
+}
+
+// Sidenav Mini
+.own-sidenav-mini {
+    overflow-y: inherit !important;
+
+    .parent-collapsible-header {
+        position: relative;
+    }
+
+    .collapsible-body {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 150px;
+        margin-left: 10px;
+        padding: 5px !important;
+        background-color: $dropdown-bg-color;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+        li a {
+            padding: 10px 15px;
+            font-size: 13px;
+            color: $dropdown-color;
+
+            &:hover {
+                background-color: $dropdown-hover-bg-color;
+            }
+        }
+    }
+}

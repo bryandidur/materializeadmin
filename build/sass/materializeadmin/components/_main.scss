@@ -1,0 +1,110 @@
+.main {
+    width: auto;
+    margin-left: $own-sidenav-width;
+    padding: 0 30px;
+
+    .divider,
+    .main-nav,
+    .main-content {
+        width: 100%;
+        float: left;
+    }
+}
+.main-nav {
+    .col {
+        padding: 0;
+    }
+
+    .nav-wrapper {
+        > ul > li {
+            position: relative;
+        }
+
+        .info-circle {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            font-size: 9px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 16px;
+            text-align: center;
+            z-index: -1;
+        }
+    }
+
+    .right li {
+        float: right;
+    }
+}
+
+// Dropdown Database
+.dropdown-database {
+    min-width: 300px;
+    color: $dropdown-color;
+
+    li:not( .dropdown-footer ):hover {
+        cursor: default;
+        background-color: inherit;
+    }
+}
+
+// Dropdown Notifications
+.dropdown-notifications {
+    min-width: 300px;
+
+    img {
+        width: 14%;
+        height: auto;
+        float: left;
+    }
+
+    div:not( .clearfix ) {
+        width: 86%;
+        float: left;
+        padding-left: 15px;
+
+        p, time {
+            margin: 0;
+            padding: 0;
+        }
+
+        time {
+            display: block;
+            text-align: right;
+            margin-top: -5px;
+            font-size: 10px;
+            font-style: italic;
+        }
+    }
+}
+
+// Dropdown Account
+.dropdown-account {
+    min-width: 150px;
+
+    li, a, span, i {
+        float: left;
+    }
+
+    li, a {
+        width: 100%;
+    }
+
+    span,
+    .material-icons {
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .material-icons {
+        width: 25px;
+        margin-right: 10px;
+        text-align: center;
+    }
+}

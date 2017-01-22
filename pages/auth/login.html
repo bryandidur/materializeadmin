@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Materialize Admin</title>
+    <link rel="shortcut icon" href="#">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/materializeadmin.css" media="screen,projection">
+</head>
+<body class="auth-page">
+
+    <div class="wrapper">
+        <section class="valign-wrapper-auth">
+            <div class="valign auth-box-wrapper">
+                <div class="auth-box">
+                    <h1 class="grey-text">Your Data of Access</h1>
+                    <form>
+                        <div class="input-field">
+                            <i class="material-icons prefix">mail_outline</i>
+                            <input id="email" type="text">
+                            <label for="email">Your e-mail</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">lock_outline</i>
+                            <input id="password" type="password">
+                            <label for="password">Your password</label>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Remember</label>
+                            </div>
+                            <div class="col s12 m6">
+                                <a ui-sref="auth.recovery">Forgot your password?</a>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-dark" type="submit">
+                            Login<i class="material-icons">send</i>
+                        </button>
+                    </form>
+                </div><!-- / .auth-box -->
+            </div>
+        </section><!-- / .valign-wrapper-auth -->
+    </div><!-- / .wrapper -->
+
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/materialize.js"></script>
+    <script src="../../assets/js/materializeadmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+html,
+.auth-page,
+.auth-page .wrapper,
+.valign-wrapper-auth {
+    height: 100%;
+}
+
+.auth-page {
+    background: url( '../img/auth.jpeg' ) no-repeat center top;
+    background-size: cover;
+}
+.valign-wrapper-auth { @extend .valign-wrapper; }
+
+// Wrapper
+.auth-box-wrapper {
+    width: 100%;
+}
+
+// Box
+.auth-box {
+    margin: 0 15px;
+    padding: 50px 40px;
+    font-size: 14px;
+    background-color: #fff;
+
+    h1 {
+        margin: 0;
+        padding: 0 0 30px 0;
+        font-size: 18px;
+        @extend .grey-text, .text-darken-2;
+    }
+
+    label { font-size: 14px; }
+    input {
+        @extend .grey-text, .text-darken-1;
+        height: 2.8rem;
+    }
+
+    a {
+        text-decoration: underline;
+        @extend .grey-text;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        i {
+            margin-top: -4px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .col {
+        margin: 10px 0;
+        padding: 0;
+    }
+    .input-field .material-icons {
+        font-size: 1.8rem;
+        @extend .grey-text, .text-darken-2;
+    }
+}
+
+@media #{$medium-and-up} {
+
+    .auth-box {
+        max-width: 450px;
+        margin: 0 auto;
+
+        button { margin-top: 20px };
+        .row { margin-top: 20px; margin-bottom: 40px; }
+        .col {
+            margin: 0;
+
+            &:nth-of-type( 2 ) {
+                height: 25px;
+                line-height: 25px;
+                text-align: right;
+            }
+        }
+    }
+}

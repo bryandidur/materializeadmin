@@ -1,0 +1,13 @@
+{
+  "name": "materializeadmin",
+  "version": "0.0.1",
+  "description": "Admin template for material design build in materializecss.",
+  "main": "gulpfile.js",
+  "author": "Bryan Didur",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jquery": "^2.1.1",
+    "laravel-elixir": "^6.0.0-15"
+  }
+}
